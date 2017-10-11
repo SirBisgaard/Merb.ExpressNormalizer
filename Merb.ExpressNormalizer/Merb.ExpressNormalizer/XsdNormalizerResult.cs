@@ -1,6 +1,7 @@
-﻿using Merb.XsdExpressNormalizer.Interfaces;
+﻿
+using Merb.ExpressNormalizer.Interfaces;
 
-namespace Merb.XsdExpressNormalizer
+namespace Merb.ExpressNormalizer
 {
     public struct XsdNormalizerResult : INormalizerResult
     {

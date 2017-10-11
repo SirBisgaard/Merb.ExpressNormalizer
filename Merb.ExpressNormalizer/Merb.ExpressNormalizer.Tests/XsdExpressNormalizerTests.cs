@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace Merb.XsdExpressNormalizer.Tests
+namespace Merb.ExpressNormalizer.Tests
 {
     [TestClass]
     public class XsdExpressNormalizerTests

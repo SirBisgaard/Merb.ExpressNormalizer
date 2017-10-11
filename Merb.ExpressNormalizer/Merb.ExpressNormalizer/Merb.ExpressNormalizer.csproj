@@ -45,6 +45,7 @@
     <Compile Include="Interfaces\IExpressNormalizer.cs" />
     <Compile Include="Interfaces\INormalizerInput.cs" />
     <Compile Include="Interfaces\INormalizerResult.cs" />
+    <Compile Include="NormalizerValidationResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XsdExpressNormalizer.cs" />
     <Compile Include="XsdNormalizerInput.cs" />

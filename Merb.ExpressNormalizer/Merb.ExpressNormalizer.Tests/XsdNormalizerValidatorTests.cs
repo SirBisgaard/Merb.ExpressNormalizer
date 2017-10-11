@@ -13,6 +13,7 @@ namespace Merb.ExpressNormalizer.Tests
             var result = sut.Validate(null);
 
             Assert.IsNotNull(result);
+            Assert.AreEqual(NormalizerValidationResult.NullResult, result);
         }
     }
 }
