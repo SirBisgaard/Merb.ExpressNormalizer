@@ -7,7 +7,9 @@ namespace Merb.ExpressNormalizer
         public INormalizerValidationResult Validate(INormalizerInput input)
         {
             if (input == null)
-                return NormalizerValidationResult.NullResult;
+                return NormalizerValidationResult.NotValid;
+            if (string.IsNullOrEmpty(input.Name))
+                return NormalizerValidationResult.NotValid;
 
             throw new System.NotImplementedException();
         }

@@ -14,7 +14,7 @@ namespace Merb.ExpressNormalizer.Tests
 
             Assert.IsNotNull(result);
             Assert.IsFalse(result.IsValid);
-            Assert.AreEqual(NormalizerValidationResult.NullResult, result);
+            Assert.AreEqual(NormalizerValidationResult.NotValid, result);
         }
 
         [TestMethod]
