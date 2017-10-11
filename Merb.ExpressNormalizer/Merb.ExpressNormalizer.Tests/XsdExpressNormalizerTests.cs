@@ -13,6 +13,7 @@ namespace Merb.XsdExpressNormalizer.Tests
             var result = sut.Normalize(null);
 
             Assert.IsNotNull(result);
+            Assert.AreEqual(XsdNormalizerResult.NullResult, result);
         }
     }
 }
