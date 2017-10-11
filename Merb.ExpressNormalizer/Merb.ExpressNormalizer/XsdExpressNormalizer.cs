@@ -1,4 +1,5 @@
 ﻿using Merb.XsdExpressNormalizer.Interfaces;
+using System;
 
 namespace Merb.XsdExpressNormalizer
 {
@@ -8,13 +9,11 @@ namespace Merb.XsdExpressNormalizer
         {
             if (input == null)
                 return XsdNormalizerResult.NullResult;
+            if (input.GetType() != typeof(XsdNormalizerInput))
+                throw new ArgumentException($"The {nameof(XsdExpressNormalizer)} can only handle {nameof(XsdNormalizerInput)} as input.", nameof(input));
 
-            throw new System.NotImplementedException();
+
+            throw new NotImplementedException();
         }
-    }
-
-    public struct XsdNormalizerResult : INormalizerResult
-    {
-        public static readonly INormalizerResult NullResult = new XsdNormalizerResult();
     }
 }
