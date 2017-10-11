@@ -10,6 +10,8 @@ namespace Merb.ExpressNormalizer
                 return NormalizerValidationResult.NotValid;
             if (string.IsNullOrEmpty(input.Name))
                 return NormalizerValidationResult.NotValid;
+            if (string.IsNullOrEmpty(input.Content))
+                return NormalizerValidationResult.NotValid;
 
             throw new System.NotImplementedException();
         }
