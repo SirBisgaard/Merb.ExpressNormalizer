@@ -1,5 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Merb.XsdExpressNormalizer.Interfaces;
+﻿using Merb.ExpressNormalizer.Interfaces;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
 namespace Merb.XsdExpressNormalizer.Tests
@@ -9,11 +9,13 @@ namespace Merb.XsdExpressNormalizer.Tests
     {
         private struct TestDommyNormalizerInput : INormalizerInput
         {
+            public string Name => throw new NotImplementedException();
 
+            public string Content => throw new NotImplementedException();
         }
 
         [TestMethod]
-        public void NormalizedResult_ShouldNotBeNull_WhenGivenNull()
+        public void NormalizedResult_ShouldNotBeNull_WhenNormalizeIsGivenNull()
         {
             var sut = new XsdExpressNormalizer() as IExpressNormalizer;
             var result = sut.Normalize(null);

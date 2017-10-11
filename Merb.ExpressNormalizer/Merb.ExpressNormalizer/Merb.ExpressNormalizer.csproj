@@ -40,11 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\INormalizerValidationResult.cs" />
+    <Compile Include="Interfaces\INormalizerValidator.cs" />
     <Compile Include="Interfaces\IExpressNormalizer.cs" />
     <Compile Include="Interfaces\INormalizerInput.cs" />
     <Compile Include="Interfaces\INormalizerResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XsdNormalizer.cs" />
+    <Compile Include="XsdExpressNormalizer.cs" />
+    <Compile Include="XsdNormalizerInput.cs" />
+    <Compile Include="XsdNormalizerResult.cs" />
+    <Compile Include="XsdNormalizerValidator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

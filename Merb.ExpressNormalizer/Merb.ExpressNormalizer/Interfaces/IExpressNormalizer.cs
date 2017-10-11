@@ -1,4 +1,4 @@
-﻿namespace Merb.XsdExpressNormalizer.Interfaces
+﻿namespace Merb.ExpressNormalizer.Interfaces
 {
     public interface IExpressNormalizer
     {

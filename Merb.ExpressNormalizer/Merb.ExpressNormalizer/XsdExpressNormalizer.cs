@@ -1,4 +1,4 @@
-﻿using Merb.XsdExpressNormalizer.Interfaces;
+﻿using Merb.ExpressNormalizer.Interfaces;
 using System;
 
 namespace Merb.XsdExpressNormalizer
