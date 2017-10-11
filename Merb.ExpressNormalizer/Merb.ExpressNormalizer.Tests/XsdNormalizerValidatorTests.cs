@@ -23,11 +23,27 @@ namespace Merb.ExpressNormalizer.Tests
             var sut = new XsdNormalizerValidator() as INormalizerValidator;
 
             Assert.IsFalse(
-                sut.Validate(new XsdNormalizerInput()).IsValid);
-
+                sut.Validate(new XsdNormalizerInput(
+                    null,
+                    "Content")).IsValid);
             Assert.IsFalse(
                 sut.Validate(new XsdNormalizerInput(
                     string.Empty, 
+                    "Content")).IsValid);
+        }
+
+        [TestMethod]
+        public void ValidationResult_ShouldNotBeValid_WhenInputContentIsNullOrEmpty()
+        {
+            var sut = new XsdNormalizerValidator() as INormalizerValidator;
+
+            Assert.IsFalse(
+                sut.Validate(new XsdNormalizerInput(
+                    "Name",
+                    null)).IsValid);
+            Assert.IsFalse(
+                sut.Validate(new XsdNormalizerInput(
+                    "Name",
                     string.Empty)).IsValid);
         }
     }
