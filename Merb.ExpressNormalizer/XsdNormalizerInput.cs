@@ -1,5 +1,3 @@
-﻿using Merb.ExpressNormalizer.Interfaces;
-
 namespace Merb.ExpressNormalizer
 {
     public struct XsdNormalizerInput : INormalizerInput

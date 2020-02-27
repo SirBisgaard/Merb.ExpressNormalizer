@@ -1,4 +1,4 @@
-﻿namespace Merb.ExpressNormalizer.Interfaces
+namespace Merb.ExpressNormalizer
 {
     public interface INormalizerValidator
     {

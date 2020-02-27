@@ -1,4 +1,3 @@
-﻿using Merb.ExpressNormalizer.Interfaces;
 using System;
 
 namespace Merb.ExpressNormalizer

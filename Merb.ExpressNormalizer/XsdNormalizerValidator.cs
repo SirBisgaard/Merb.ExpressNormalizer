@@ -1,5 +1,3 @@
-﻿using Merb.ExpressNormalizer.Interfaces;
-
 namespace Merb.ExpressNormalizer
 {
     public class XsdNormalizerValidator : INormalizerValidator
